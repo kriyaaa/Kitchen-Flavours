@@ -6,37 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Kitchen Flavours </title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Lato:wght@100&family=Open+Sans:wght@300&family=Waterfall&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <link rel="icon" type="image/x-icon" href="Favicon.png">
 
+    <script src="https://kit.fontawesome.com/65a90d005a.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <div id="main">
-        <div id="nav">
-            <div id="navl">
-                <img src="Icon.png" alt="">
+        <header id="main">
+        <nav>
+            <div id="logo">
+                <img src="Logo.png" alt="">
             </div>
-            <div id="navr">
-                <a href="#">Home</a>
-                <a href="#about">About Us</a>
-                <a href="#welcome">Register Now</a>
-                <a href="#categories"> Categories</a>
-
-                <a href="#">Contact Us</a>
-                <a href="#">Review Us </a>
+            <div class="dropdown-menu text-right">
+                <div class="bars">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="dropdown-list nav-menu">
+                    <ul class="no-list-style">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#welcome">Register Now</a></li>
+                        <li><a href="#categories"> Categories</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>              
             </div>
-        </div>
+            <ul id="z1" class="no-list-style horizontal-list text-center nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#welcome">Register Now</a></li>
+                <li><a href="#categories"> Categories</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        
         <div id="welcome">
             <div id="welcomel">
                 <h1> Get a Fresh at <br> New taste </h1>
                 <button>Register Now</button>
             </div> 
-            <img src="./kisspng-bubble-tea-masala-chai-latte-matcha-food-products-–-gulf-international-maritime-pvt-5b6742dc8f0e52.428169951533493980586.png" alt="">
-
+            <div id="overlay">
+                <div id="pop">
+                    <div id="register">
+                        <p id="reg"> Register Here </p>
+                        <button id="reg-icon"><i class="far fa-times-circle"></i></button>
+                    </div>
+                    <form>
+                        <input type="text" placeholder="Username" name="u-name" required>
+                        <input type="email" placeholder="Email" name="email" required>
+                        <input type="password" placeholder="Password" name="password" required>
+                        <input type="password" placeholder="Confirm Password">
+                        <button class="btn text-center">Sign Up</button>
+                    </form>
+                    <p id="member"> Already a Member? <a href="#login-pop"> Click Here </a></p>
+                </div>
+                <div id="login-pop">
+                        <button id="log-icon"><i class="far fa-times-circle"></i></button>
+                    <form>
+                        <input type="email" placeholder="Email" name="email" required>
+                        <input type="password" placeholder="Password"name="psw" required>
+                        <button class="btn text-center"> Log In </button>
+                    </form>
+                </div>
+            </div>
+            <img id="z2" src="./pexels-rajesh-tp-1633525-removebg-preview.png" alt="">
         </div>
-    </div>
-    <div id="about">
+        </header>
+        <section id="about">
         <div id="inside">
             <div id="about1">
             </div>
@@ -47,9 +89,89 @@
                 <img id="i2" src="kisspng-sydney-brunch-pancake-watercolor-painting-green-leaves-5a863360613d88.4249516915187444163983.png">
             </div>
         </div>
-    </div>
-    <div id="categories">
-        
-    </div>
+        </section>
+        <section id="categories">
+        <div id="menu">
+           <div id="cat">
+            <div id="catl">
+                <h3> Our Categories </h3>
+            </div>
+            <div id="catr">
+                <p> Choose from the menu list and select the ingredients you have. Generate a recipe based on the ingredients you have at home. Create your perfect meal. Discover more recipes. Enjoy! </p>
+            </div>
+           </div>
+           <div id="breakfast">
+                <img src="./pexels-polina-tankilevitch-4725659-removebg-preview.png" alt="">
+                <a href="#"> Breakfast </a>
+           </div>
+           <div id="meal">
+                <a href="#"> Food </a>
+                <img src="./kisspng-masala-dosa-idli-south-indian-cuisine-5af2d41c91a253.1465228015258634525965.png" alt="">
+           </div>
+           <div id="snacks">
+                <img src="./Coffee_and_chocolate___caramel_macaroons-removebg-preview.png" alt="">
+                <a href="#"> Beverage </a>
+           </div>
+           <div id="dessert">
+                <a href="#"> Dessert </a>
+                <img src="pexels-piotr-arnoldes-6025807-removebg-preview.png" alt="">
+           </div>
+        </div>
+        </section>
+        <section id="photo">
+            <div id="fix">
+            </div>
+        </section>
+        <section id="contact">
+        <h1 class=" text-center section-heading"> 
+             Contact Us 
+        </h1>
+        <div id="contact-container">
+            <div id="contact-form-container">
+                <form id="contact-form">
+                    <input id="input-name" name="name" type="text" placeholder="Your Name">
+                    <input id="input-email" name="input-email" type="text" required="" placeholder="Your Email">
+                    <textarea id="input-message" name="input-message" rows="2" cols="40" placeholder="Message"></textarea>
+                    <button class="sub-btn" type="submit">SEND MESSAGE</button>
+                </form>
+            </div>
+            <div id="my-details-container">
+                <div class="my-details-info-container">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Bhopal, India</span>
+                </div>
+                <div class="my-details-info-container">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>7309509080</span>
+                </div>
+                <div class="my-details-info-container">
+                    <i class="far fa-envelope"></i>
+                    <span>kesaria.riyaaa14@gmail.com</span>
+                </div>
+            </div>
+        </div>
+        <div class="text-center social-icons">
+            <ul class="no-list-style horizontal-list">
+                <li>
+                    <a href="https://www.linkedin.com/in/riya-kesaria-2737371a5/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/kriyaaa" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto: kesaria.riyaaa14@gmail.com" target="_blank">
+                        <i class="fab fa-google-plus-g"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.5/ScrollTrigger.min.js" integrity="sha512-m/n857VfrPYUcRvzCfqfrC9aMT06TQA2V0DcX/Ovovrhswa3038FfYmHlB0l/ZMukVyKWmiwZI4Pnnd7v3FwFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
 </body>
 </html>
