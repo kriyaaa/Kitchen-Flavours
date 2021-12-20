@@ -16,19 +16,6 @@ document.querySelector("#reg-icon").addEventListener("click",function(){
 
 })
 
-// let tl = gsap.timeline({
-//     // yes, we can add it to an entire timeline!
-//     scrollTrigger: {
-//       trigger: "#about",
-//     //   pin: true,
-//       start: "top 80%",
-//       end: "+=500",
-//       scrub: 2,
-//     }
-//   });
-
-
-
 
 tl=gsap.timeline()
 tl
@@ -42,24 +29,19 @@ tl
 .from("#welcomel h1",{
     duration:2,
     x:-100,
-    // stagger:0.2,
     opacity:0
 },"=-1.5")
 .from("#z2",{
     duration:3,
-    // x:-100,
-    // stagger:0.2,
     opacity:0
 },"=-1")
 .from("#i2",{
     duration:1.5,
     y:70,
-    // stagger:0.2,
     opacity:0
 },"=-3.8")
 .from("#i1",{
     duration:3,
     y:80,
-    // stagger:0.2,
     opacity:0
 },"=-4")
