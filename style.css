@@ -562,7 +562,7 @@ nav #logo-icon img{
 }
 
 
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:400px) {
     
     /* Home Page */
 
@@ -699,6 +699,19 @@ nav #logo-icon img{
     }
     #contact-form button[type="submit"]{
         margin-left: 20%;
+    }
+    #overlay #pop{
+        width: 80%;
+        height: 108%;
+        margin-left: 10%;
+    }
+    #pop #member{
+        margin-left: 20%;
+    }
+    #overlay #login-pop{
+        width: 80%;
+        height: 68%;
+        margin-left: 10%;
     }
 
     /* Categories Page */

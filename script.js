@@ -15,9 +15,17 @@ document.querySelector("#reg-icon").addEventListener("click",function(){
     document.querySelector("#overlay").style.display="none"
 
 })
-
-
-tl=gsap.timeline()
+tl = gsap.timeline({
+    // yes, we can add it to an entire timeline!
+    scrollTrigger: {
+      trigger: "#main",
+      pin: true,
+      start: "top top",
+      end: "+=800",
+      scrub: 1,
+    //   markers: true,
+    }
+  });
 tl
 .from("#z1 a",{
     duration:2,
