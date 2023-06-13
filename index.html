@@ -15,6 +15,9 @@
     <link rel="icon" type="image/x-icon" href="Favicon.png">
 
     <script src="https://kit.fontawesome.com/65a90d005a.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
 
 </head>
 <body>
@@ -30,28 +33,26 @@
                     </div>
                     <div class="dropdown-list nav-menu">
                         <ul class="no-list-style">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#about">About Us</a></li>
-                            <li><a href="#welcome">Register Now</a></li>
-                            <li><a href="#categories"> Categories</a></li>
-                            <li><a href="#contact">Contact Us</a></li>
+                            <li><a href="#"> Home </a></li>
+                            <li><a href="#about"> About Us </a></li>
+                            <li><a href="#categories"> Search </a></li>
+                            <li><a href="#contact"> Contact Us </a></li>
                         </ul>
                     </div>              
                 </div>
                 <ul id="z1" class="no-list-style horizontal-list text-center nav-menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#welcome">Register Now</a></li>
-                    <li><a href="#categories"> Categories</a></li>
+                    <li><a href="#"> Home </a></li>
+                    <li><a href="#about"> About Us </a></li>
+                    <li><a href="#search"> Search </a></li>
                     <li><a href="#contact">Contact Us</a></li>
                 </ul>
             </nav>
             <div id="welcome">
                 <div id="welcomel">
                     <h1> Get a Fresh at <br> New taste </h1>
-                    <button>Register Now</button>
+                    <!-- <button>Register Now</button> -->
                 </div> 
-                <div id="overlay">
+                <!-- <div id="overlay">
                     <div id="pop">
                         <div id="register">
                             <p id="reg"> Register Here </p>
@@ -74,7 +75,7 @@
                             <button class="btn text-center"> Log In </button>
                         </form>
                     </div>
-                </div>
+                </div> -->
                 <img id="z2" src="./pexels-rajesh-tp-1633525-removebg-preview.png" alt="">
             </div>
         </div>
@@ -90,33 +91,21 @@
             </div>
         </div>
         </section>
-        <section id="categories">
-        <div id="menu">
-           <div id="cat">
-            <div id="catl">
-                <h3> Our Categories </h3>
+        <section id="search">
+            <div id="search-bar">
+                <form id="submit">
+                    <input type="text" placeholder="Search Ingredients" id="srch">
+                    <button type="submit" class="srch-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                <button class="random-btn" id="random">
+                    <i class="fas fa-random"></i>
+                </button>
             </div>
-            <div id="catr">
-                <p> Choose from the menu list and select the ingredients you have. Generate a recipe based on the ingredients you have at home. Create your perfect meal. Discover more recipes. Enjoy! </p>
-            </div>
-           </div>
-           <div id="breakfast">
-                <img src="./pexels-polina-tankilevitch-4725659-removebg-preview.png" alt="">
-                <a href="Categories.html"> Breakfast </a>
-           </div>
-           <div id="meal">
-                <a href="Categories.html"> Food </a>
-                <img src="./kisspng-masala-dosa-idli-south-indian-cuisine-5af2d41c91a253.1465228015258634525965.png" alt="">
-           </div>
-           <div id="snacks">
-                <img src="./Coffee_and_chocolate___caramel_macaroons-removebg-preview.png" alt="">
-                <a href="Categories.html"> Beverage </a>
-           </div>
-           <div id="dessert">
-                <a href="Categories.html"> Dessert </a>
-                <img src="pexels-piotr-arnoldes-6025807-removebg-preview.png" alt="">
-           </div>
-        </div>
+            <div class="result-heading"></div>
+            <div class="meals" id="meals"></div>
+            <div id="single-meal"></div>
         </section>
         <section id="photo">
             <div id="fix">
@@ -139,10 +128,6 @@
                 <div class="my-details-info-container">
                     <i class="fas fa-map-marker-alt"></i>
                     <span>Bhopal, India</span>
-                </div>
-                <div class="my-details-info-container">
-                    <i class="fas fa-mobile-alt"></i>
-                    <span>7309509080</span>
                 </div>
                 <div class="my-details-info-container">
                     <i class="far fa-envelope"></i>
@@ -171,8 +156,14 @@
         </div>
         </section>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.5/ScrollTrigger.min.js" integrity="sha512-m/n857VfrPYUcRvzCfqfrC9aMT06TQA2V0DcX/Ovovrhswa3038FfYmHlB0l/ZMukVyKWmiwZI4Pnnd7v3FwFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+ 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+
+    
 </body>
 </html>
