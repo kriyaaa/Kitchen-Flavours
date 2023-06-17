@@ -91,21 +91,23 @@
             </div>
         </div>
         </section>
-        <section id="search">
-            <div id="search-bar">
-                <form id="submit">
-                    <input type="text" placeholder="Search Ingredients" id="srch">
-                    <button type="submit" class="srch-btn">
-                        <i class="fas fa-search"></i>
+        <section id="search-section">
+            <div class="search-container">
+                <div class="flex">
+                    <form class="flex" id="submit">
+                        <input type="text" placeholder="Search Ingredients" id="search">
+                        <button type="submit" class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                    <button class="random-btn" id="random">
+                        <i class="fas fa-random"></i>
                     </button>
-                </form>
-                <button class="random-btn" id="random">
-                    <i class="fas fa-random"></i>
-                </button>
+                </div>
+                <div class="result-heading"></div>
+                <div class="meals" id="meals"></div>
+                <div id="single-meal"></div>
             </div>
-            <div class="result-heading"></div>
-            <div class="meals" id="meals"></div>
-            <div id="single-meal"></div>
         </section>
         <section id="photo">
             <div id="fix">
