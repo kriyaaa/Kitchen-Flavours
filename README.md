@@ -4,10 +4,10 @@ Meal Generator Web Application
 Meal Generator is a web application that empowers users to input their choice of ingredients and, in return, provides a curated list of recipes that match those ingredients. This project combines HTML for structuring the application's layout, CSS for visually appealing designs, and JavaScript for added features and functionality. It further leverages an API to fetch recipe data and generate a list of recipes.
 
 **Features**
-Ingredient: Based Recipe Search: Users can input their desired ingredients, and the application will fetch and display recipes that include those ingredients.
-User-Friendly Interface: The application features a visually appealing and user-friendly design created using CSS.
-API Integration: The project integrates an API to fetch recipe data, ensuring that the recipe list is up-to-date.
-Recipe Recommendations: The application provides a curated list of recipes based on the user's input, making it easier for users to decide what to cook based on the ingredients they have.
+1. Ingredient: Based Recipe Search: Users can input their desired ingredients, and the application will fetch and display recipes that include those ingredients.
+2. User-Friendly Interface: The application features a visually appealing and user-friendly design created using CSS.
+3. API Integration: The project integrates an API to fetch recipe data, ensuring that the recipe list is up-to-date.
+4. Recipe Recommendations: The application provides a curated list of recipes based on the user's input, making it easier for users to decide what to cook based on the ingredients they have.
 
 **Getting Started**
 Follow these instructions to get a copy of the project up and running on your local machine.
@@ -21,6 +21,7 @@ git clone https://github.com/yourusername/meal-generator.git
 
 2. Navigate to the project directory:
 cd meal-generator
+
 3. Open the index.html file in your web browser to use the application.
 
 **Usage**
