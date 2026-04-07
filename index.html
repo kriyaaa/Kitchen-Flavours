@@ -4,168 +4,161 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Kitchen Flavours </title>
+    <title>Kitchen Flavours</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Lato:wght@100&family=Open+Sans:wght@300&family=Waterfall&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="style.css">
-
     <link rel="icon" type="image/x-icon" href="Favicon.png">
 
     <script src="https://kit.fontawesome.com/65a90d005a.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-
-
 </head>
 <body>
-     <div id="main">
-        <div id="top">
-            <nav>
-                <div id="logo">
-                    <img src="Logo.png" alt="">
-                </div>
-                <div class="dropdown-menu text-right">
-                    <div class="bars">
-                        <i class="fas fa-bars"></i>
-                    </div>
-                    <div class="dropdown-list nav-menu">
-                        <ul class="no-list-style">
-                            <li><a href="#"> Home </a></li>
-                            <li><a href="#about"> About Us </a></li>
-                            <li><a href="#categories"> Search </a></li>
-                            <li><a href="#contact"> Contact Us </a></li>
-                        </ul>
-                    </div>              
-                </div>
-                <ul id="z1" class="no-list-style horizontal-list text-center nav-menu">
-                    <li><a href="#"> Home </a></li>
-                    <li><a href="#about"> About Us </a></li>
-                    <li><a href="#search"> Search </a></li>
-                    <li><a href="#contact">Contact Us</a></li>
+    <main id="main">
+        <header id="top" class="hero-shell">
+            <nav class="site-nav">
+                <a id="logo" class="brand" href="#top" aria-label="Kitchen Flavours home">
+                    <img src="Logo.png" alt="Kitchen Flavours logo">
+                </a>
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
+                <ul id="primary-nav" class="no-list-style nav-links">
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#search-section">Search</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <div id="welcome">
-                <div id="welcomel">
-                    <h1> Get a Fresh at <br> New taste </h1>
-                    <!-- <button>Register Now</button> -->
-                </div> 
-                <!-- <div id="overlay">
-                    <div id="pop">
-                        <div id="register">
-                            <p id="reg"> Register Here </p>
-                            <button id="reg-icon"><i class="far fa-times-circle"></i></button>
-                        </div>
-                        <form>
-                            <input type="text" placeholder="Username" name="u-name" required>
-                            <input type="email" placeholder="Email" name="email" required>
-                            <input type="password" placeholder="Password" name="password" required>
-                            <input type="password" placeholder="Confirm Password">
-                            <button class="btn text-center">Sign Up</button>
-                        </form>
-                        <p id="member"> Already a Member? <a href="#login-pop"> Click Here </a></p>
-                    </div>
-                    <div id="login-pop">
-                        <button id="log-icon"><i class="far fa-times-circle"></i></button>
-                        <form>
-                            <input type="email" placeholder="Email" name="email" required>
-                            <input type="password" placeholder="Password"name="psw" required>
-                            <button class="btn text-center"> Log In </button>
-                        </form>
-                    </div>
-                </div> -->
-                <img id="z2" src="./pexels-rajesh-tp-1633525-removebg-preview.png" alt="">
-            </div>
-        </div>
-        <section id="about">
-        <div id="inside">
-            <div id="about1">
-            </div>
-            <div id="about2">
-                <h3> Explore Kitchen Flavours! </h3>
-                <p> Deciding on what to cook or eat can be hard sometimes, or if you happen to have a few ingredients in the cupboard and you’re not sure how to combine them to. Here you can search for recipes with those ingredients. Our goal is simple to provide you with delicious, healthy, wholesome recipes and meal plans that help you reach your health goals and enjoy mealtime again. We can help you cook more and stress less. </p>
-                <img id="i1" src="kisspng-sydney-brunch-pancake-watercolor-painting-green-leaves-5a863360613d88.4249516915187444163983.png">
-                <img id="i2" src="kisspng-sydney-brunch-pancake-watercolor-painting-green-leaves-5a863360613d88.4249516915187444163983.png">
-            </div>
-        </div>
-        </section>
-        <section id="search-section">
-            <div class="search-container">
-                <div class="flex">
-                    <form class="flex" id="submit">
-                        <input type="text" placeholder="Search Ingredients" id="search">
-                        <button type="submit" class="search-btn">
-                            <i class="fas fa-search"></i>
-                        </button>
-                    </form>
-                    <button class="random-btn" id="random">
-                        <i class="fas fa-random"></i>
-                    </button>
-                </div>
-                <div class="result-heading"></div>
-                <div class="meals" id="meals"></div>
-                <div id="single-meal"></div>
-            </div>
-        </section>
-        <section id="photo">
-            <div id="fix">
-            </div>
-        </section>
-        <section id="contact">
-        <h1 class=" text-center section-heading"> 
-             Contact Us 
-        </h1>
-        <div id="contact-container">
-            <div id="contact-form-container">
-                <form id="contact-form">
-                    <input id="input-name" name="name" type="text" placeholder="Your Name">
-                    <input id="input-email" name="input-email" type="text" required="" placeholder="Your Email">
-                    <textarea id="input-message" name="input-message" rows="2" cols="40" placeholder="Message"></textarea>
-                    <button class="sub-btn" type="submit">SEND MESSAGE</button>
-                </form>
-            </div>
-            <div id="my-details-container">
-                <div class="my-details-info-container">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Bhopal, India</span>
-                </div>
-                <div class="my-details-info-container">
-                    <i class="far fa-envelope"></i>
-                    <span>kesaria.riyaaa14@gmail.com</span>
-                </div>
-            </div>
-        </div>
-        <div class="text-center social-icons">
-            <ul class="no-list-style horizontal-list">
-                <li>
-                    <a href="https://www.linkedin.com/in/riya-kesaria-2737371a5/" target="_blank">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/kriyaaa" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto: kesaria.riyaaa14@gmail.com" target="_blank">
-                        <i class="fab fa-google-plus-g"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        </section>
-    </div>
 
- 
+            <div id="welcome" class="hero-content">
+                <div id="welcomel" class="hero-copy">
+                    <p class="eyebrow">Seasonal inspiration for your kitchen</p>
+                    <h1>Fresh ideas for the next thing you cook.</h1>
+                    <p class="hero-text">
+                        Search by ingredient, discover a surprise meal, and turn what is already in your pantry into something worth sitting down for.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#search-section">Start searching</a>
+                        <a class="button button-secondary" href="#about">How it works</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-plate"></div>
+                    <div class="hero-image-wrap">
+                        <div class="hero-image-glow"></div>
+                        <img id="z2" src="pexels-rajesh-tp-1633525-removebg-preview.png" alt="A plated Indian meal">
+                    </div>
+                    <div class="hero-note hero-note-top">
+                        <span>Ingredient-first</span>
+                        <p>Find recipes from what you already have.</p>
+                    </div>
+                    <div class="hero-note hero-note-bottom">
+                        <span>One-click discovery</span>
+                        <p>Use the surprise button when you want a quick idea.</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="about" class="panel-section">
+            <div id="inside" class="section-shell about-grid">
+                <div id="about1" class="about-media"></div>
+                <div id="about2" class="about-copy">
+                    <p class="section-label">About Kitchen Flavours</p>
+                    <h2>Recipes that meet you where your pantry is.</h2>
+                    <p>
+                        Deciding what to cook can be frustrating, especially when you only have a handful of ingredients in the cupboard. Kitchen Flavours helps you explore delicious recipes, discover healthy options, and spend less time stressing over meals.
+                    </p>
+                    <div class="about-highlights">
+                        <article class="highlight-card">
+                            <h3>Search with ease</h3>
+                            <p>Start with one ingredient and uncover complete meal ideas in seconds.</p>
+                        </article>
+                        <article class="highlight-card">
+                            <h3>Cook with confidence</h3>
+                            <p>Browse clear instructions, ingredient lists, and meal inspiration in one place.</p>
+                        </article>
+                    </div>
+                    <img id="i1" src="kisspng-sydney-brunch-pancake-watercolor-painting-green-leaves-5a863360613d88.4249516915187444163983.png" alt="" aria-hidden="true">
+                    <img id="i2" src="kisspng-sydney-brunch-pancake-watercolor-painting-green-leaves-5a863360613d88.4249516915187444163983.png" alt="" aria-hidden="true">
+                </div>
+            </div>
+        </section>
+
+        <section id="search-section" class="panel-section search-section">
+            <div class="section-shell search-shell">
+                <div class="search-intro">
+                    <p class="section-label">Recipe search</p>
+                    <h2>Find your next meal by ingredient or let the app surprise you.</h2>
+                    <p>
+                        Try pantry staples like chicken, rice, lemon, or spinach. You can also use the surprise option when you want something new without overthinking dinner.
+                    </p>
+                </div>
+
+                <div class="search-container">
+                    <div class="search-toolbar">
+                        <form class="search-form" id="submit">
+                            <label class="sr-only" for="search">Search ingredients</label>
+                            <input type="text" placeholder="Search ingredients" id="search" autocomplete="off">
+                            <button type="submit" class="search-btn">
+                                <i class="fas fa-search" aria-hidden="true"></i>
+                                <span>Search</span>
+                            </button>
+                        </form>
+                        <button class="random-btn" id="random" type="button">
+                            <i class="fas fa-random" aria-hidden="true"></i>
+                            <span>Surprise me</span>
+                        </button>
+                    </div>
+
+                    <div class="result-heading" id="result-heading" aria-live="polite">
+                        Search for an ingredient to start exploring recipes.
+                    </div>
+                    <div class="meals" id="meals"></div>
+                    <div id="single-meal"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="photo" class="feature-break">
+            <div id="fix">
+                <div class="feature-overlay">
+                    <p>One good recipe can change the whole mood of the evening.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="panel-section">
+            <div class="section-shell contact-shell">
+                <div class="contact-copy">
+                    <p class="section-label">Contact</p>
+                    <h2>Share feedback, ideas, or the meal you ended up making.</h2>
+                    <p>
+                        Kitchen Flavours is built for curious home cooks. If you have suggestions, want to say hello, or found a recipe you loved, this is the place to reach out.
+                    </p>
+                    <div id="my-details-container">
+                    </div>
+                </div>
+
+                <div id="contact-form-container" class="contact-card">
+                    <form id="contact-form">
+                        <input id="input-name" name="name" type="text" placeholder="Your Name">
+                        <input id="input-email" name="input-email" type="email" required placeholder="Your Email">
+                        <textarea id="input-message" name="input-message" rows="4" cols="40" placeholder="Message"></textarea>
+                        <button class="sub-btn" type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+    </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
-     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
-
-    
 </body>
 </html>
